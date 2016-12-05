@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SKUIComponents_Example' do
+  pod 'SKUIComponents', :path => '../'
+
+  target 'SKUIComponents_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
