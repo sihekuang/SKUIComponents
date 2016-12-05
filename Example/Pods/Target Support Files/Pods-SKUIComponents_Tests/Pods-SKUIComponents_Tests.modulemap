@@ -1,0 +1,6 @@
+framework module Pods_SKUIComponents_Tests {
+  umbrella header "Pods-SKUIComponents_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

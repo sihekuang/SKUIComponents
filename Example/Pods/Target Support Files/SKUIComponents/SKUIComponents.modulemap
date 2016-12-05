@@ -1,0 +1,6 @@
+framework module SKUIComponents {
+  umbrella header "SKUIComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}
