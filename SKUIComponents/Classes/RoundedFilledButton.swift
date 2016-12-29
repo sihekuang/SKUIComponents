@@ -9,17 +9,17 @@
 import UIKit
 
 @IBDesignable
-class RoundedFilledButton: UIButton {
+public class RoundedFilledButton: UIButton {
 
     @IBInspectable
-    var cornerRadius: CGFloat = 0
+    public var cornerRadius: CGFloat = 0
     
     @IBInspectable
-    var fillColor: UIColor?
+    public var fillColor: UIColor?
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         // Drawing code
         
         let bgColor = self.fillColor
@@ -31,7 +31,7 @@ class RoundedFilledButton: UIButton {
         bezierPath.fill()
     }
     
-    override var isHighlighted: Bool{
+    public override var isHighlighted: Bool{
         set{
             super.isHighlighted = newValue
             if isHighlighted{
