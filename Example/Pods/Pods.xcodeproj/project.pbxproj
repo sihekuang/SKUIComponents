@@ -12,7 +12,6 @@
 		653624CB1E14F03F00831774 /* ProgressRingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653624CA1E14F03F00831774 /* ProgressRingButton.swift */; };
 		6583F8301E14A6ED000E17F5 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583F82F1E14A6ED000E17F5 /* UIHelper.swift */; };
 		6583F8321E14A932000E17F5 /* GradientNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583F8311E14A932000E17F5 /* GradientNavigationBar.swift */; };
-		6583F8361E14EC8B000E17F5 /* ConnectedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583F8351E14EC8B000E17F5 /* ConnectedTableViewCell.swift */; };
 		65DFC93F1E149964002F06A8 /* RoundedGradientFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFC93E1E149964002F06A8 /* RoundedGradientFilledButton.swift */; };
 		65EB96BD1DF4FB2800E9BEDD /* RoundedFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB96BC1DF4FB2800E9BEDD /* RoundedFilledButton.swift */; };
 		8EAA06C3B912C218FAB512532F542719 /* Pods-SKUIComponents_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A03F66C772430685294EC33E472F47 /* Pods-SKUIComponents_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,7 +47,6 @@
 		653624CA1E14F03F00831774 /* ProgressRingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingButton.swift; sourceTree = "<group>"; };
 		6583F82F1E14A6ED000E17F5 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		6583F8311E14A932000E17F5 /* GradientNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientNavigationBar.swift; sourceTree = "<group>"; };
-		6583F8351E14EC8B000E17F5 /* ConnectedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedTableViewCell.swift; sourceTree = "<group>"; };
 		65DFC93E1E149964002F06A8 /* RoundedGradientFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedGradientFilledButton.swift; sourceTree = "<group>"; };
 		65EB96BC1DF4FB2800E9BEDD /* RoundedFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedFilledButton.swift; sourceTree = "<group>"; };
 		746ACF6AE21F5AE7441246B89E381658 /* Pods-SKUIComponents_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKUIComponents_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				65DFC93E1E149964002F06A8 /* RoundedGradientFilledButton.swift */,
 				6583F82F1E14A6ED000E17F5 /* UIHelper.swift */,
 				6583F8311E14A932000E17F5 /* GradientNavigationBar.swift */,
-				6583F8351E14EC8B000E17F5 /* ConnectedTableViewCell.swift */,
 				653624CA1E14F03F00831774 /* ProgressRingButton.swift */,
 			);
 			path = Classes;
@@ -366,7 +363,6 @@
 				6583F8321E14A932000E17F5 /* GradientNavigationBar.swift in Sources */,
 				65EB96BD1DF4FB2800E9BEDD /* RoundedFilledButton.swift in Sources */,
 				65DFC93F1E149964002F06A8 /* RoundedGradientFilledButton.swift in Sources */,
-				6583F8361E14EC8B000E17F5 /* ConnectedTableViewCell.swift in Sources */,
 				6583F8301E14A6ED000E17F5 /* UIHelper.swift in Sources */,
 				587043773930E09E183CE055BB569A3E /* SKUIComponents-dummy.m in Sources */,
 				653624CB1E14F03F00831774 /* ProgressRingButton.swift in Sources */,

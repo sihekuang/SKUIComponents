@@ -23,7 +23,7 @@ public class GradientNavigationBar: UINavigationBar {
         let startColor = self.startColor ?? UIColor.white
         let endColor = self.endColor ?? startColor
         
-        UIHelper.drawGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: 0)
+        UIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: 0)
 
     }
 

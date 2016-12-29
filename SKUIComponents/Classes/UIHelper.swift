@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class UIHelper{
-    static func drawGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
+    static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
         let gradientColors: CFArray = [startColor.cgColor, endColor.cgColor] as CFArray
@@ -30,7 +30,6 @@ class UIHelper{
             let endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)
             
             context.drawLinearGradient(lineGradient!, start: startPoint, end: endPoint, options: CGGradientDrawingOptions(rawValue: 0))
-            
         }
     }
 }
