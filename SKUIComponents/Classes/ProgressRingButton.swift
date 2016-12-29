@@ -40,14 +40,15 @@ public class ProgressRingButton: UIButton {
     override public func draw(_ rect: CGRect) {
         // Drawing code
         self.drawBackgroundRing()
-        self.drawRingByProgress(progress: self.progress, color: UIColor.black)
+
+        let color = fillColor ?? UIColor.black
+        self.drawRingByProgress(progress: self.progress, color: color)
         self.updateLabel(progress: self.progress)
         
     }
     
     private func drawBackgroundRing(){
-        let color = fillColor ?? UIColor.lightGray
-        self.drawRingByProgress(progress: 1, color: color)
+        self.drawRingByProgress(progress: 1, color: UIColor.clear)
     }
     
     private func drawRingByProgress(progress: CGFloat, color: UIColor){
