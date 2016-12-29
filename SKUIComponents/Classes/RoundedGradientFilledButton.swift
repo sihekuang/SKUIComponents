@@ -20,7 +20,7 @@ public class RoundedGradientFilledButton: RoundedFilledButton{
         let endColor = self.endColor ?? startColor
         let radius = self.cornerRadius
         
-        UIHelper.drawGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
+        UIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
     }
     
 }
