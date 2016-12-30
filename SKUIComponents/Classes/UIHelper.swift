@@ -38,14 +38,14 @@ class UIHelper{
         let center = CGPoint(x:bounds.width/2 + bounds.origin.x, y: bounds.height/2 + bounds.origin.y)
         
         // 2. Determine the radius
-        var radius: CGFloat = min(bounds.width, bounds.height) / 2
+        let radius: CGFloat = min(bounds.width, bounds.height) / 2
         
         // 3. Determine arc width
         let arcWidth: CGFloat = archWidth
         
         
         // 4. Determine Path
-        var path = UIBezierPath(arcCenter: center,
+        let path = UIBezierPath(arcCenter: center,
                                 radius: radius - archWidth,
                                 startAngle: startAngleRad - halfPi, //So it would start from the 12 o'clock position
                                 endAngle: endAngleRad - halfPi,
