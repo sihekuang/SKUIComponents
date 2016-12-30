@@ -9,7 +9,63 @@
 import Foundation
 import UIKit
 
+
+/*!
+ * These helper methods are meant to be called in the draw(rect:CGRect) method so it can draw coloring in the components
+ */
 class UIHelper{
+    
+    static let twoPi = 2 * CGFloat(M_PI)
+    static let quarterPi = CGFloat(M_PI) / 4
+    static let halfPi = CGFloat(M_PI) / 2
+    
+    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect){
+        drawCircle(startAngleRad: startAngleRad,
+                   endAngleRad: endAngleRad,
+                   color: color,
+                   bounds: bounds,
+                   filled: false)
+    }
+    
+    static func drawCircle(startAngleRad: CGFloat,
+                           endAngleRad: CGFloat,
+                           color: UIColor,
+                           bounds: CGRect,
+                           filled: Bool,
+                           archWidth: CGFloat = 3){
+        // 1. Determine the center
+        let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
+        
+        // 2. Determine the radius
+        var radius: CGFloat = min(bounds.width, bounds.height) / 2
+        
+        // 3. Determine arc width
+        let arcWidth: CGFloat = 3
+        
+        
+        // 4. Determine Path
+        var path = UIBezierPath(arcCenter: center,
+                                radius: radius - archWidth,
+                                startAngle: startAngleRad - halfPi, //So it would start from the 12 o'clock position
+                                endAngle: endAngleRad - halfPi,
+                                clockwise: true)
+        
+        if filled{
+            path.addLine(to: center)    
+        }
+        
+        
+        // 5. Set stroke
+        path.lineWidth = archWidth
+        if filled{
+            color.setFill()
+            path.fill()
+        }else{
+            color.setStroke()
+            path.stroke()
+        }
+    }
+    
     static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
