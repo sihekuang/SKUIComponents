@@ -40,11 +40,8 @@ class UIHelper{
         // 2. Determine the radius
         let radius: CGFloat = min(bounds.width, bounds.height) / 2
         
-        // 3. Determine arc width
-        let arcWidth: CGFloat = archWidth
         
-        
-        // 4. Determine Path
+        // 3. Determine Path
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius - archWidth,
                                 startAngle: startAngleRad - halfPi, //So it would start from the 12 o'clock position
@@ -56,7 +53,7 @@ class UIHelper{
         }
         
         
-        // 5. Set stroke
+        // 4. Set stroke/fill
         path.lineWidth = archWidth
         if filled{
             color.setFill()
