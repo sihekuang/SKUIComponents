@@ -54,33 +54,7 @@ public class ProgressRingButton: UIButton {
     private func drawRingByProgress(progress: CGFloat, color: UIColor){
         let startAngle: CGFloat = 0
         let endAngle = progress * twoPi
-        self.drawRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color)
-    }
-    
-    private func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor){
-        
-        
-        // 1. Determine the center
-        let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
-        
-        // 2. Determine the radius
-        let radius: CGFloat = max(bounds.width, bounds.height) / 2
-        
-        // 3. Determine arc width
-        let arcWidth: CGFloat = 3
-        
-        
-        // 4. Determine Path
-        let path = UIBezierPath(arcCenter: center,
-                                radius: radius - arcWidth,
-                                startAngle: startAngleRad - halfPi, //So it would start from the 12 o'clock position
-            endAngle: endAngleRad - halfPi,
-            clockwise: true)
-        
-        // 5. Set stroke
-        path.lineWidth = arcWidth
-        color.setStroke()
-        path.stroke()
+        UIHelper.drawRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color, bounds: self.bounds)
     }
     
     //MARK: - private methods
