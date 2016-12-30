@@ -19,12 +19,13 @@ class UIHelper{
     static let quarterPi = CGFloat(M_PI) / 4
     static let halfPi = CGFloat(M_PI) / 2
     
-    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect){
+    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect, archWidth: CGFloat = 3){
         drawCircle(startAngleRad: startAngleRad,
                    endAngleRad: endAngleRad,
                    color: color,
                    bounds: bounds,
-                   filled: false)
+                   filled: false,
+                   archWidth: archWidth)
     }
     
     static func drawCircle(startAngleRad: CGFloat,
@@ -34,13 +35,13 @@ class UIHelper{
                            filled: Bool,
                            archWidth: CGFloat = 3){
         // 1. Determine the center
-        let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
+        let center = CGPoint(x:bounds.width/2 + bounds.origin.x, y: bounds.height/2 + bounds.origin.y)
         
         // 2. Determine the radius
         var radius: CGFloat = min(bounds.width, bounds.height) / 2
         
         // 3. Determine arc width
-        let arcWidth: CGFloat = 3
+        let arcWidth: CGFloat = archWidth
         
         
         // 4. Determine Path
