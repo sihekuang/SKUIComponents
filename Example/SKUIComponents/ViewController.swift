@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SKUIComponents
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func changeNavbarStartColorToBlue(_ sender: Any) {
+        if let navbar = self.navigationController?.navigationBar as? GradientNavigationBar
+        {
+            navbar.startColor = UIColor.blue
+        }
+    }
+    
+    
+    @IBAction func changeNavbarEndColorToRed(_ sender: Any) {
+        if let navbar = self.navigationController?.navigationBar as? GradientNavigationBar
+        {
+            navbar.endColor = UIColor.red
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

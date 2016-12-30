@@ -73,12 +73,12 @@ class UIHelper{
         
         
         if let context = UIGraphicsGetCurrentContext(){
+            //Bezier path is for cliping
             let bezierPath = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
+            bezierPath.addClip()
             
             context.saveGState()
-            
-            bezierPath.fill()
-            bezierPath.addClip()
+
             
             let startPoint = CGPoint(x: rect.origin.x, y: rect.origin.y)
             let endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)
