@@ -1,6 +1,6 @@
 # SKUIComponents
 
-[![CI Status](http://img.shields.io/travis/Daniel Lee/SKUIComponents.svg?style=flat)](https://travis-ci.org/Daniel Lee/SKUIComponents)
+[![CI Status](https://travis-ci.org/sihekuang/SKUIComponents.svg?branch=master)](https://travis-ci.org/sihekuang/SKUIComponents)
 [![Version](https://img.shields.io/cocoapods/v/SKUIComponents.svg?style=flat)](http://cocoapods.org/pods/SKUIComponents)
 [![License](https://img.shields.io/cocoapods/l/SKUIComponents.svg?style=flat)](http://cocoapods.org/pods/SKUIComponents)
 [![Platform](https://img.shields.io/cocoapods/p/SKUIComponents.svg?style=flat)](http://cocoapods.org/pods/SKUIComponents)
