@@ -19,21 +19,79 @@ class UIHelper{
     static let quarterPi = CGFloat(M_PI) / 4
     static let halfPi = CGFloat(M_PI) / 2
     
-    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect, archWidth: CGFloat = 3)->UIBezierPath{
-        return drawCircle(startAngleRad: startAngleRad,
-                   endAngleRad: endAngleRad,
-                   color: color,
-                   bounds: bounds,
-                   filled: false,
-                   archWidth: archWidth)
+    
+    
+    static func getArchLayerWithGradient(bounds: CGRect,
+                                         archWidth: CGFloat,
+                                         startColorRatio: CGFloat,
+                                         startColor: UIColor,
+                                         endColor: UIColor,
+                                         percentFilled: CGFloat)->CALayer
+    {
+        //setup
+        let lineWidth = archWidth
+        let midPointRatio = NSNumber(value: Float(startColorRatio))
+        let c1 = startColor
+        let c2 = endColor
+        let percentRad = percentFilled * UIHelper.twoPi
+        let rect = bounds
+        
+        
+        //Gradient
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = rect
+        gradientLayer.colors = [c1.cgColor, c1.cgColor, c2.cgColor, UIColor.clear.cgColor];
+        gradientLayer.locations = [0, midPointRatio, 1]
+        
+        
+        //apply arch layer to gradient to create the gradiented arch
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
+        if let con = UIGraphicsGetCurrentContext(){
+            
+            con.setFillColor(UIColor.clear.cgColor)
+            con.setLineWidth(lineWidth)
+            
+            let center = CGPoint(x: rect.midX, y: rect.midY)
+            let radius = rect.width
+            let path = getCircleBezierPath(startAngleRad: 0, endAngleRad: percentRad, bounds: rect, filled: false, archWidth: lineWidth)
+            con.addPath(path.cgPath)
+            
+            
+            con.strokePath()
+            let im = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            let arcLayer = CALayer()
+            arcLayer.frame = rect
+            arcLayer.contents = im?.cgImage
+            gradientLayer.mask = arcLayer
+        }
+
+        return gradientLayer
     }
     
-    static func drawCircle(startAngleRad: CGFloat,
-                           endAngleRad: CGFloat,
-                           color: UIColor,
-                           bounds: CGRect,
-                           filled: Bool,
-                           archWidth: CGFloat = 3)->UIBezierPath{
+    static func drawRing(startAngleRad: CGFloat,
+                         endAngleRad: CGFloat,
+                         color: UIColor,
+                         bounds: CGRect,
+                         archWidth: CGFloat = 3)->UIBezierPath
+    {
+        return drawCircle(startAngleRad: startAngleRad,
+                          endAngleRad: endAngleRad,
+                          color: color,
+                          bounds: bounds,
+                          filled: false,
+                          archWidth: archWidth)
+    }
+    
+    /*!
+     * This method generate the bezier path for circle/arch
+     */
+    static func getCircleBezierPath(startAngleRad: CGFloat,
+                                    endAngleRad: CGFloat,
+                                    bounds: CGRect,
+                                    filled: Bool,
+                                    archWidth: CGFloat)->UIBezierPath
+    {
         // 1. Determine the center
         let center = CGPoint(x:bounds.width/2 + bounds.origin.x, y: bounds.height/2 + bounds.origin.y)
         
@@ -45,13 +103,27 @@ class UIHelper{
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius - archWidth,
                                 startAngle: startAngleRad - halfPi, //So it would start from the 12 o'clock position
-                                endAngle: endAngleRad - halfPi,
-                                clockwise: true)
+            endAngle: endAngleRad - halfPi,
+            clockwise: true)
         
         if filled{
-            path.addLine(to: center)    
+            path.addLine(to: center)
         }
         
+        return path
+    }
+    
+    /*!
+     * This method draw circle. With ability to draw arch
+     */
+    static func drawCircle(startAngleRad: CGFloat,
+                           endAngleRad: CGFloat,
+                           color: UIColor,
+                           bounds: CGRect,
+                           filled: Bool,
+                           archWidth: CGFloat = 3)->UIBezierPath{
+        
+        let path = getCircleBezierPath(startAngleRad: startAngleRad, endAngleRad: endAngleRad, bounds: bounds, filled: filled, archWidth: archWidth)
         
         // 4. Set stroke/fill
         path.lineWidth = archWidth
@@ -66,6 +138,10 @@ class UIHelper{
         return path
     }
     
+    
+    /*!
+     * This method draws gradient from left to right in square
+     */
     static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
@@ -80,7 +156,7 @@ class UIHelper{
             bezierPath.addClip()
             
             context.saveGState()
-
+            
             
             let startPoint = CGPoint(x: rect.origin.x, y: rect.origin.y)
             let endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)

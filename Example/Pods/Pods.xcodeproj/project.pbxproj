@@ -12,6 +12,7 @@
 		651034A21E1637F300DEF07B /* ConnectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651034A11E1637F300DEF07B /* ConnectionTableViewCell.swift */; };
 		653624CB1E14F03F00831774 /* ProgressRingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653624CA1E14F03F00831774 /* ProgressRingButton.swift */; };
 		656535C61E1AE399005EAB95 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656535C51E1AE399005EAB95 /* RoundedImageView.swift */; };
+		6576BE5B1E220C1C00D7D8A6 /* GradientProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576BE5A1E220C1C00D7D8A6 /* GradientProgressButton.swift */; };
 		6583F8301E14A6ED000E17F5 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583F82F1E14A6ED000E17F5 /* UIHelper.swift */; };
 		6583F8321E14A932000E17F5 /* GradientNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583F8311E14A932000E17F5 /* GradientNavigationBar.swift */; };
 		65DFC93F1E149964002F06A8 /* RoundedGradientFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFC93E1E149964002F06A8 /* RoundedGradientFilledButton.swift */; };
@@ -49,6 +50,7 @@
 		651034A11E1637F300DEF07B /* ConnectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionTableViewCell.swift; sourceTree = "<group>"; };
 		653624CA1E14F03F00831774 /* ProgressRingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingButton.swift; sourceTree = "<group>"; };
 		656535C51E1AE399005EAB95 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		6576BE5A1E220C1C00D7D8A6 /* GradientProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgressButton.swift; sourceTree = "<group>"; };
 		6583F82F1E14A6ED000E17F5 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		6583F8311E14A932000E17F5 /* GradientNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientNavigationBar.swift; sourceTree = "<group>"; };
 		65DFC93E1E149964002F06A8 /* RoundedGradientFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedGradientFilledButton.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				653624CA1E14F03F00831774 /* ProgressRingButton.swift */,
 				651034A11E1637F300DEF07B /* ConnectionTableViewCell.swift */,
 				656535C51E1AE399005EAB95 /* RoundedImageView.swift */,
+				6576BE5A1E220C1C00D7D8A6 /* GradientProgressButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6583F8321E14A932000E17F5 /* GradientNavigationBar.swift in Sources */,
+				6576BE5B1E220C1C00D7D8A6 /* GradientProgressButton.swift in Sources */,
 				656535C61E1AE399005EAB95 /* RoundedImageView.swift in Sources */,
 				65EB96BD1DF4FB2800E9BEDD /* RoundedFilledButton.swift in Sources */,
 				65DFC93F1E149964002F06A8 /* RoundedGradientFilledButton.swift in Sources */,

@@ -55,7 +55,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-m6-1NN" customClass="RoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="53" y="553" width="267" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hW4-kX-2ze"/>
+                                    <constraint firstAttribute="height" constant="30" id="NlB-Jy-ZhO"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Connection Table View Cell Examples">
@@ -76,8 +76,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-HX-cxS" customClass="ProgressRingButton" customModule="SKUIComponents">
                                 <rect key="frame" x="164" y="125" width="46" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="16W-ee-tgd"/>
-                                    <constraint firstAttribute="width" constant="46" id="k9D-eU-Uay"/>
+                                    <constraint firstAttribute="width" constant="46" id="9bs-VU-6lm"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                                 <userDefinedRuntimeAttributes>
@@ -94,6 +93,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-xm-ZJM" customClass="RoundedGradientFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="123" y="62" width="129" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="LPP-2l-e5H"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Gradient Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,7 +115,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-to-Iig" customClass="RoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="91" y="8" width="192" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ZXQ-0g-uRn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tl8-oa-Tia"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Rounded Filled Button">
@@ -131,8 +133,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v56-Dg-qw7" customClass="RoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="63" y="194" width="75" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Ia6-Hx-GuD"/>
-                                    <constraint firstAttribute="height" constant="30" id="gCM-Di-Zd0"/>
+                                    <constraint firstAttribute="height" constant="30" id="bjz-l3-4Gg"/>
+                                    <constraint firstAttribute="width" constant="75" id="iYU-jd-5wr"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Blue">
@@ -153,7 +155,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-mo-YmJ" customClass="RoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="245" y="194" width="75" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="fmK-fd-qMz"/>
+                                    <constraint firstAttribute="width" constant="75" id="Rb1-J4-2wD"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Red">
@@ -174,30 +176,47 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-f3-0Zs" customClass="RoundedImageView" customModule="SKUIComponents">
                                 <rect key="frame" x="124" y="259" width="126" height="126"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="DHj-8d-Jth"/>
-                                    <constraint firstAttribute="width" constant="126" id="sT7-9R-IUi"/>
+                                    <constraint firstAttribute="width" constant="126" id="c5f-jc-ats"/>
+                                    <constraint firstAttribute="height" constant="126" id="cJb-uQ-MMw"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-4d-xVo" customClass="GradientProgressButton" customModule="SKUIComponents">
+                                <rect key="frame" x="157" y="405" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.24313725489999999" green="0.54117647059999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.90980392160000001" green="0.1764705882" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="v56-Dg-qw7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="7Oo-nB-y9H"/>
-                            <constraint firstItem="5Za-xm-ZJM" firstAttribute="centerX" secondItem="xa4-HX-cxS" secondAttribute="centerX" id="C2k-YR-Z0M"/>
-                            <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="5Za-xm-ZJM" secondAttribute="centerX" id="Eub-aC-QNk"/>
-                            <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="G9o-Hd-1bm"/>
-                            <constraint firstItem="v56-Dg-qw7" firstAttribute="baseline" secondItem="Mk3-mo-YmJ" secondAttribute="firstBaseline" id="IOu-c3-cX8"/>
-                            <constraint firstItem="zlK-m6-1NN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="37" id="Ig4-ah-pmj"/>
-                            <constraint firstItem="5Za-xm-ZJM" firstAttribute="top" secondItem="Cqp-to-Iig" secondAttribute="bottom" constant="24" id="J66-y0-rRr"/>
-                            <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="Mk3-mo-YmJ" secondAttribute="bottom" constant="35" id="Rpn-3W-Bd4"/>
-                            <constraint firstItem="Cqp-to-Iig" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="RtN-lD-PYC"/>
-                            <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="94" id="SvH-ak-k8g"/>
-                            <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="Mk3-mo-YmJ" secondAttribute="top" id="U0P-Am-QVv"/>
-                            <constraint firstItem="xa4-HX-cxS" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="25" id="ZCP-du-0g6"/>
-                            <constraint firstAttribute="bottom" secondItem="zlK-m6-1NN" secondAttribute="bottom" constant="20" symbolic="YES" id="knB-MM-f0A"/>
-                            <constraint firstItem="Mk3-mo-YmJ" firstAttribute="baseline" secondItem="v56-Dg-qw7" secondAttribute="firstBaseline" id="lmK-XP-uJy"/>
-                            <constraint firstItem="n9J-f3-0Zs" firstAttribute="centerX" secondItem="xa4-HX-cxS" secondAttribute="centerX" id="mJF-pO-FvZ"/>
-                            <constraint firstItem="Mk3-mo-YmJ" firstAttribute="trailing" secondItem="zlK-m6-1NN" secondAttribute="trailing" id="qK6-s3-EHF"/>
-                            <constraint firstItem="Cqp-to-Iig" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="yhA-PI-lNY"/>
+                            <constraint firstItem="v56-Dg-qw7" firstAttribute="baseline" secondItem="Mk3-mo-YmJ" secondAttribute="firstBaseline" id="8B9-JV-XRR"/>
+                            <constraint firstItem="v56-Dg-qw7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="A2b-vB-2kq"/>
+                            <constraint firstAttribute="bottom" secondItem="zlK-m6-1NN" secondAttribute="bottom" constant="20" symbolic="YES" id="BEl-8u-WQJ"/>
+                            <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="v56-Dg-qw7" secondAttribute="bottom" constant="35" id="ET7-Ke-nwv"/>
+                            <constraint firstItem="Cqp-to-Iig" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="F1R-Te-hFX"/>
+                            <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="94" id="KLH-wQ-N5f"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="157" id="LLQ-mh-int"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="n9J-f3-0Zs" secondAttribute="centerX" id="OUT-ul-eZJ"/>
+                            <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="5Za-xm-ZJM" secondAttribute="centerX" id="S3s-47-xsz"/>
+                            <constraint firstItem="Cqp-to-Iig" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="U3Q-4a-sgO"/>
+                            <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="xa4-HX-cxS" secondAttribute="bottom" constant="88" id="YSe-GQ-nd8"/>
+                            <constraint firstItem="Mk3-mo-YmJ" firstAttribute="baseline" secondItem="v56-Dg-qw7" secondAttribute="firstBaseline" id="YSt-QF-YM8"/>
+                            <constraint firstItem="5Za-xm-ZJM" firstAttribute="centerX" secondItem="xa4-HX-cxS" secondAttribute="centerX" id="af8-dt-bhL"/>
+                            <constraint firstItem="xa4-HX-cxS" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="25" id="epo-Wc-Vji"/>
+                            <constraint firstItem="xa4-HX-cxS" firstAttribute="centerX" secondItem="n9J-f3-0Zs" secondAttribute="centerX" id="fSR-P7-xHK"/>
+                            <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hZN-6e-Lfg"/>
+                            <constraint firstItem="Mk3-mo-YmJ" firstAttribute="trailing" secondItem="zlK-m6-1NN" secondAttribute="trailing" id="kR1-ic-vW3"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="top" secondItem="n9J-f3-0Zs" secondAttribute="bottom" constant="20" id="n29-FE-FFG"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="zlK-m6-1NN" secondAttribute="centerX" id="tL9-2H-ypK"/>
+                            <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="Mk3-mo-YmJ" secondAttribute="top" id="tTR-tl-0hH"/>
+                            <constraint firstItem="5Za-xm-ZJM" firstAttribute="top" secondItem="Cqp-to-Iig" secondAttribute="bottom" constant="24" id="u7u-Ou-sBA"/>
+                            <constraint firstItem="zlK-m6-1NN" firstAttribute="top" secondItem="HnV-4d-xVo" secondAttribute="bottom" constant="88" id="x8t-td-667"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gnj-4i-OWL"/>
