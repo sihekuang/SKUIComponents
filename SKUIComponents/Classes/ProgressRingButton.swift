@@ -54,7 +54,7 @@ public class ProgressRingButton: UIButton {
     private func drawRingByProgress(progress: CGFloat, color: UIColor){
         let startAngle: CGFloat = 0
         let endAngle = progress * twoPi
-        _ = UIHelper.drawRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color, bounds: self.bounds)
+        _ = UIHelper.drawArchRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color, bounds: self.bounds)
     }
     
     //MARK: - private methods
