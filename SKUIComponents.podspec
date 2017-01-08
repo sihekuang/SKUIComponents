@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SKUIComponents'
-  s.version          = '0.6.0'
+  s.version          = '0.6.1'
   s.summary          = 'A library of custom UI components for iOS in Swift 3. '
 
 # This description is used to generate tags and improve search results.
