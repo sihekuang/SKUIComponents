@@ -53,8 +53,6 @@ class UIHelper{
             con.setFillColor(UIColor.clear.cgColor)
             con.setLineWidth(lineWidth)
             
-            let center = CGPoint(x: rect.midX, y: rect.midY)
-            let radius = rect.width
             let path = getArchBezierPath(startAngleRad: 0, endAngleRad: percentRad, bounds: rect, filled: false, archWidth: lineWidth)
             con.addPath(path.cgPath)
             
