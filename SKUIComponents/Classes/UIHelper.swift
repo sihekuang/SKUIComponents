@@ -19,8 +19,8 @@ class UIHelper{
     static let quarterPi = CGFloat(M_PI) / 4
     static let halfPi = CGFloat(M_PI) / 2
     
-    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect, archWidth: CGFloat = 3){
-        drawCircle(startAngleRad: startAngleRad,
+    static func drawRing(startAngleRad: CGFloat, endAngleRad: CGFloat, color: UIColor, bounds: CGRect, archWidth: CGFloat = 3)->UIBezierPath{
+        return drawCircle(startAngleRad: startAngleRad,
                    endAngleRad: endAngleRad,
                    color: color,
                    bounds: bounds,
@@ -33,7 +33,7 @@ class UIHelper{
                            color: UIColor,
                            bounds: CGRect,
                            filled: Bool,
-                           archWidth: CGFloat = 3){
+                           archWidth: CGFloat = 3)->UIBezierPath{
         // 1. Determine the center
         let center = CGPoint(x:bounds.width/2 + bounds.origin.x, y: bounds.height/2 + bounds.origin.y)
         
@@ -62,6 +62,8 @@ class UIHelper{
             color.setStroke()
             path.stroke()
         }
+        
+        return path
     }
     
     static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
