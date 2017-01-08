@@ -42,7 +42,7 @@ public class ProgressRingButton: UIButton {
         self.drawBackgroundRing()
 
         let color = fillColor ?? UIColor.black
-        self.drawRingByProgress(progress: self.progress, color: color)
+        _ = self.drawRingByProgress(progress: self.progress, color: color)
         self.updateLabel(progress: self.progress)
         
     }

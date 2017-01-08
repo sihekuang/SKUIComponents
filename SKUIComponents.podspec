@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SKUIComponents'
-  s.version          = '0.5.0'
-  s.summary          = 'A library of custom UI components for iOS in Swift 3. Rounded corner button, button with gradient colors, rounded images... and more!'
+  s.version          = '0.5.1'
+  s.summary          = 'A library of custom UI components for iOS in Swift 3. '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This is a library that provide custom UI components for iOS developers. The library is in Swift 3.
+This is a library that provide custom UI components for iOS developers. The library is in Swift 3. Rounded corner button, button with gradient colors, rounded images... and more!
                        DESC
 
   s.homepage         = 'https://github.com/sihekuang/SKUIComponents'
