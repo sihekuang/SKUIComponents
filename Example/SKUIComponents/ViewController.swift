@@ -11,9 +11,11 @@ import SKUIComponents
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var gradientProgressButton: GradientProgressButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        gradientProgressButton.beginRotaionAnimation(isClockwise: true, periodInSec: 1)
     }
     
     @IBAction func changeNavbarStartColorToBlue(_ sender: Any) {
@@ -31,6 +33,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func gradientButtonTapped(_ sender: Any) {
+        if !gradientProgressButton.isAnimating{
+            gradientProgressButton.beginRotaionAnimation(isClockwise: true, periodInSec: 0.5)
+        }else{
+            gradientProgressButton.stopRotationAnimation()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

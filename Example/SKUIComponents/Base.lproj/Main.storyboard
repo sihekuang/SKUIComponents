@@ -191,6 +191,9 @@
                                         <color key="value" red="0.90980392160000001" green="0.1764705882" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gradientButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NN7-Az-EoH"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -220,6 +223,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gnj-4i-OWL"/>
+                    <connections>
+                        <outlet property="gradientProgressButton" destination="HnV-4d-xVo" id="elY-gD-MnM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

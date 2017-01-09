@@ -15,9 +15,10 @@ import UIKit
  */
 class UIHelper{
     
-    static let twoPi = 2 * CGFloat(M_PI)
-    static let quarterPi = CGFloat(M_PI) / 4
-    static let halfPi = CGFloat(M_PI) / 2
+    static let pi = CGFloat(M_PI)
+    static let twoPi = 2 * pi
+    static let quarterPi = pi / 4
+    static let halfPi = pi / 2
     
     
     /*!

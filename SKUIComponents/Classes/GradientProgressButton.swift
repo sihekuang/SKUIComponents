@@ -26,6 +26,17 @@ public class GradientProgressButton: UIButton {
     @IBInspectable
     public var percent: CGFloat = 1
     
+    public var isAnimating: Bool{
+        get{
+            if let _ = self.layer.animation(forKey: rotationAnimationKey){
+                return true
+            }
+            return false
+        }
+    }
+    
+    let rotationAnimationKey = "rotationAnimation"
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     public override func draw(_ rect: CGRect) {
@@ -39,5 +50,19 @@ public class GradientProgressButton: UIButton {
                                                                   percentFilled: percent)
         self.layer.addSublayer(gradientArchLayer)
         
+    }
+    
+    public func beginRotaionAnimation(isClockwise: Bool, periodInSec: Float){
+        var rotationAnimation = CABasicAnimation()
+        rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
+        rotationAnimation.toValue = NSNumber(value: (M_PI * 2.0))
+        rotationAnimation.duration = CFTimeInterval(periodInSec)
+        rotationAnimation.isCumulative = true
+        rotationAnimation.repeatCount = Float(Int.max)
+        self.layer.add(rotationAnimation, forKey: rotationAnimationKey)
+    }
+    
+    public func stopRotationAnimation(){
+        self.layer.removeAnimation(forKey: rotationAnimationKey)
     }
 }
