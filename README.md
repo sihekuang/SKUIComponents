@@ -6,11 +6,11 @@
 
 ## Components that are viewable in Storyboard!
 
-![SKUIComponentsV062ScreenShot](https://content.screencast.com/users/sihekuang/folders/Jing/media/e707667e-14fb-4df8-9f8d-99003f13b715/00000011.png){ width=50% }
+![SKUIComponentsV062ScreenShot](https://content.screencast.com/users/sihekuang/folders/Jing/media/e707667e-14fb-4df8-9f8d-99003f13b715/00000011.png)
 
 ## Available Components
 
-![SKUIComponentsV062Gif](https://thumbs.gfycat.com/ConcernedLoneAnemonecrab-size_restricted.gif){ width=50% }
+![SKUIComponentsV062Gif](https://thumbs.gfycat.com/ConcernedLoneAnemonecrab-size_restricted.gif)
 
 - Rounded Image
 - Rounded Filled Button
