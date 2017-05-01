@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class RoundedFilledButton: UIButton {
+public class SKRoundedFilledButton: UIButton {
 
     @IBInspectable
     public var cornerRadius: CGFloat = 0

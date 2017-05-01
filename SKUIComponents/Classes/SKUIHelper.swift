@@ -13,9 +13,9 @@ import UIKit
 /*!
  * These helper methods are meant to be called in the draw(rect:CGRect) method so it can draw coloring in the components
  */
-class UIHelper{
+public class SKUIHelper{
     
-    static let pi = CGFloat(M_PI)
+    static let pi = CGFloat(Float.pi)
     static let twoPi = 2 * pi
     static let quarterPi = pi / 4
     static let halfPi = pi / 2
@@ -24,7 +24,7 @@ class UIHelper{
     /*!
      * This method return an arch with gradient color. StartColor ratio is the ratio of what percentage of the start color will fill the arch ring.
      */
-    static func getArchLayerWithGradient(bounds: CGRect,
+    public static func getArchLayerWithGradient(bounds: CGRect,
                                          archWidth: CGFloat,
                                          startColorRatio: CGFloat,
                                          startColor: UIColor,
@@ -36,7 +36,7 @@ class UIHelper{
         let midPointRatio = NSNumber(value: Float(startColorRatio))
         let c1 = startColor
         let c2 = endColor
-        let percentRad = percentFilled * UIHelper.twoPi
+        let percentRad = percentFilled * SKUIHelper.twoPi
         let rect = bounds
         
         
@@ -70,7 +70,7 @@ class UIHelper{
         return gradientLayer
     }
 
-    static func drawArchRing(startAngleRad: CGFloat,
+    public static func drawArchRing(startAngleRad: CGFloat,
                              endAngleRad: CGFloat,
                              color: UIColor,
                              bounds: CGRect,
@@ -87,7 +87,7 @@ class UIHelper{
     /*!
      * This method generate the bezier path for circle/arch
      */
-    static func getArchBezierPath(startAngleRad: CGFloat,
+    public static func getArchBezierPath(startAngleRad: CGFloat,
                                   endAngleRad: CGFloat,
                                   bounds: CGRect,
                                   filled: Bool,
@@ -117,7 +117,7 @@ class UIHelper{
     /*!
      * This method draw circle. With ability to draw arch
      */
-    static func drawArch(startAngleRad: CGFloat,
+    public static func drawArch(startAngleRad: CGFloat,
                          endAngleRad: CGFloat,
                          color: UIColor,
                          bounds: CGRect,
@@ -143,7 +143,7 @@ class UIHelper{
     /*!
      * This method draws gradient from left to right in square
      */
-    static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
+    public static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
         let gradientColors: CFArray = [startColor.cgColor, endColor.cgColor] as CFArray

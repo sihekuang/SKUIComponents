@@ -11,7 +11,7 @@ import SKUIComponents
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var gradientProgressButton: GradientProgressButton!
+    @IBOutlet weak var gradientProgressButton: SKGradientProgressButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeNavbarStartColorToBlue(_ sender: Any) {
-        if let navbar = self.navigationController?.navigationBar as? GradientNavigationBar
+        if let navbar = self.navigationController?.navigationBar as? SKGradientNavigationBar
         {
             navbar.startColor = UIColor.blue
         }
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeNavbarEndColorToRed(_ sender: Any) {
-        if let navbar = self.navigationController?.navigationBar as? GradientNavigationBar
+        if let navbar = self.navigationController?.navigationBar as? SKGradientNavigationBar
         {
             navbar.endColor = UIColor.red
         }

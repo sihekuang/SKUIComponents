@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class GradientProgressButton: UIButton {
+public class SKGradientProgressButton: UIButton {
     
     @IBInspectable
     public var startColor: UIColor = UIColor.blue
@@ -42,7 +42,7 @@ public class GradientProgressButton: UIButton {
     public override func draw(_ rect: CGRect) {
         // Drawing code
         
-        let gradientArchLayer = UIHelper.getArchLayerWithGradient(bounds: rect,
+        let gradientArchLayer = SKUIHelper.getArchLayerWithGradient(bounds: rect,
                                                                   archWidth: archWidth,
                                                                   startColorRatio: startColorRatio,
                                                                   startColor: startColor,
@@ -55,7 +55,7 @@ public class GradientProgressButton: UIButton {
     public func beginRotaionAnimation(isClockwise: Bool, periodInSec: Float){
         var rotationAnimation = CABasicAnimation()
         rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
-        rotationAnimation.toValue = NSNumber(value: (M_PI * 2.0))
+        rotationAnimation.toValue = NSNumber(value: (Double.pi * 2.0))
         rotationAnimation.duration = CFTimeInterval(periodInSec)
         rotationAnimation.isCumulative = true
         rotationAnimation.repeatCount = Float(Int.max)

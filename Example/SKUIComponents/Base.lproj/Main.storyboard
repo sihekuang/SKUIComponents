@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NTh-Fo-OGx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NTh-Fo-OGx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -52,7 +52,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-m6-1NN" customClass="RoundedFilledButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-m6-1NN" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="53" y="553" width="267" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NlB-Jy-ZhO"/>
@@ -73,7 +73,7 @@
                                     <segue destination="gca-pn-wu8" kind="show" id="n0T-iq-l4W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-HX-cxS" customClass="ProgressRingButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-HX-cxS" customClass="SKProgressRingButton" customModule="SKUIComponents">
                                 <rect key="frame" x="164" y="125" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="9bs-VU-6lm"/>
@@ -91,7 +91,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-xm-ZJM" customClass="RoundedGradientFilledButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-xm-ZJM" customClass="SKRoundedGradientFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="123" y="62" width="129" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="LPP-2l-e5H"/>
@@ -112,7 +112,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-to-Iig" customClass="RoundedFilledButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-to-Iig" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="91" y="8" width="192" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Tl8-oa-Tia"/>
@@ -130,7 +130,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v56-Dg-qw7" customClass="RoundedFilledButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v56-Dg-qw7" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="63" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bjz-l3-4Gg"/>
@@ -152,7 +152,7 @@
                                     <action selector="changeNavbarStartColorToBlue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vbQ-TW-hM7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-mo-YmJ" customClass="RoundedFilledButton" customModule="SKUIComponents">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-mo-YmJ" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
                                 <rect key="frame" x="245" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Rb1-J4-2wD"/>
@@ -173,14 +173,14 @@
                                     <action selector="changeNavbarEndColorToRed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A6p-km-HeA"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-f3-0Zs" customClass="RoundedImageView" customModule="SKUIComponents">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-f3-0Zs" customClass="SKRoundedImageView" customModule="SKUIComponents">
                                 <rect key="frame" x="124" y="259" width="126" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="126" id="c5f-jc-ats"/>
                                     <constraint firstAttribute="height" constant="126" id="cJb-uQ-MMw"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-4d-xVo" customClass="GradientProgressButton" customModule="SKUIComponents">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-4d-xVo" customClass="SKGradientProgressButton" customModule="SKUIComponents">
                                 <rect key="frame" x="157" y="405" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -242,7 +242,7 @@
                         <sections>
                             <tableViewSection headerTitle="Connection Table View Cell Example" id="hPu-KK-rSN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="ZsW-Ey-RDl" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="ZsW-Ey-RDl" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZsW-Ey-RDl" id="jfF-dN-7Ci">
@@ -280,7 +280,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="nsI-Kz-Fr7" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="nsI-Kz-Fr7" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="128" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nsI-Kz-Fr7" id="8Xw-cy-h2W">
@@ -319,7 +319,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="DWg-hW-rRX" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="DWg-hW-rRX" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="178" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWg-hW-rRX" id="Cig-xr-H4a">
@@ -358,7 +358,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="eHa-rb-yd4" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="eHa-rb-yd4" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="228" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eHa-rb-yd4" id="NM6-8d-29c">
@@ -397,7 +397,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8Iz-85-VSw" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8Iz-85-VSw" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="278" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Iz-85-VSw" id="pdc-tF-5aX">
@@ -436,7 +436,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="136-1J-r94" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="136-1J-r94" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="328" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="136-1J-r94" id="zjU-Of-2DU">
@@ -475,7 +475,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="XvX-vr-mxK" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="XvX-vr-mxK" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="378" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XvX-vr-mxK" id="lWP-b3-NME">
@@ -514,7 +514,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="qJG-sg-1Ye" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="qJG-sg-1Ye" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="428" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qJG-sg-1Ye" id="3xW-Lh-dE8">
@@ -553,7 +553,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="kdT-6R-geH" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="kdT-6R-geH" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="478" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdT-6R-geH" id="pFf-vR-7b5">
@@ -592,7 +592,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8z4-aF-rmI" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8z4-aF-rmI" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="528" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8z4-aF-rmI" id="s4T-vh-Y3e">
@@ -631,7 +631,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="wlo-YN-UkY" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="wlo-YN-UkY" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="578" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wlo-YN-UkY" id="GSt-bd-gtV">
@@ -670,7 +670,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="hPu-mZ-Qxz" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="hPu-mZ-Qxz" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="628" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hPu-mZ-Qxz" id="PzA-dY-UM2">
@@ -709,7 +709,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isDrawingTopLine" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="FNW-f1-VsU" customClass="ConnectionTableViewCell" customModule="SKUIComponents">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="FNW-f1-VsU" customClass="SKConnectionTableViewCell" customModule="SKUIComponents">
                                         <rect key="frame" x="0.0" y="678" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNW-f1-VsU" id="lDz-GI-yJF">

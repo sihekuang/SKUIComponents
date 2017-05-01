@@ -209,6 +209,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SK;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
@@ -220,6 +221,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TULKQWS4XL;
 						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -528,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 214A7F02097097C210503558 /* Pods-SKUIComponents_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TULKQWS4XL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BACCE4296B61843A811E8B44 /* Pods-SKUIComponents_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TULKQWS4XL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

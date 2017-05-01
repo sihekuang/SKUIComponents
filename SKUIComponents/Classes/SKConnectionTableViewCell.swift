@@ -8,7 +8,7 @@
 
 import UIKit
 @IBDesignable
-public class ConnectionTableViewCell: UITableViewCell {
+public class SKConnectionTableViewCell: UITableViewCell {
 
     @IBInspectable
     public var circleArchWidth: CGFloat = 3
@@ -59,7 +59,7 @@ public class ConnectionTableViewCell: UITableViewCell {
         let circleBounds = CGRect(x: xPos, y: yPos, width: circleRadius * 2, height: circleRadius * 2)
         
         //2. Draw circle
-        _ = UIHelper.drawArchRing(startAngleRad: 0.0, endAngleRad: UIHelper.twoPi, color: circleColor, bounds: circleBounds, archWidth: archWidth)
+        _ = SKUIHelper.drawArchRing(startAngleRad: 0.0, endAngleRad: SKUIHelper.twoPi, color: circleColor, bounds: circleBounds, archWidth: archWidth)
         
         //3. draw a line between the mid point of the bottom of the rect/bottom of the circle and the bottom of cell
         lineColor.setStroke()

@@ -9,7 +9,7 @@
 import Foundation
 
 @IBDesignable
-public class RoundedGradientFilledButton: RoundedFilledButton{
+public class SKRoundedGradientFilledButton: SKRoundedFilledButton{
     
     @IBInspectable
     public var endColor: UIColor?
@@ -20,7 +20,7 @@ public class RoundedGradientFilledButton: RoundedFilledButton{
         let endColor = self.endColor ?? startColor
         let radius = self.cornerRadius
         
-        UIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
+        SKUIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
     }
     
 }

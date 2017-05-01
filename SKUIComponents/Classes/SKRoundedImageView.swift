@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class RoundedImageView: UIImageView{
+public class SKRoundedImageView: UIImageView{
 
     public override func layoutSubviews() {
         

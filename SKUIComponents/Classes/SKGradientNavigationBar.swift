@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class GradientNavigationBar: UINavigationBar {
+public class SKGradientNavigationBar: UINavigationBar {
     
     
     @IBInspectable

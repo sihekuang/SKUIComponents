@@ -9,14 +9,14 @@
 import UIKit
 
 @IBDesignable
-public class ProgressRingButton: UIButton {
+public class SKProgressRingButton: UIButton {
 
     
     private var _progress: CGFloat = 0.5
-    private let pi = CGFloat(M_PI)
-    private let twoPi = 2 * CGFloat(M_PI)
-    private let quarterPi = CGFloat(M_PI) / 4
-    private let halfPi = CGFloat(M_PI) / 2
+    private let pi = Float.pi
+    private let twoPi = 2.0 * Float.pi
+    private let quarterPi = Float.pi / 4
+    private let halfPi = Float.pi / 2
     
     @IBInspectable var fillColor: UIColor?
     @IBInspectable var maxValue: CGFloat = 100
@@ -53,8 +53,8 @@ public class ProgressRingButton: UIButton {
     
     private func drawRingByProgress(progress: CGFloat, color: UIColor){
         let startAngle: CGFloat = 0
-        let endAngle = progress * twoPi
-        _ = UIHelper.drawArchRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color, bounds: self.bounds)
+        let endAngle = progress * CGFloat(twoPi)
+        _ = SKUIHelper.drawArchRing(startAngleRad: startAngle, endAngleRad: endAngle, color: color, bounds: self.bounds)
     }
     
     //MARK: - private methods
