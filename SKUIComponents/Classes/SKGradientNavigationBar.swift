@@ -11,11 +11,12 @@ import UIKit
 @IBDesignable
 public class SKGradientNavigationBar: UINavigationBar {
     
+    private var lastRect: CGRect?
     
     @IBInspectable
     public var startColor: UIColor = UIColor.clear {
         didSet{
-            setGradientBackground()
+            setGradientBackground(force: true)
             
         }
     }
@@ -23,13 +24,10 @@ public class SKGradientNavigationBar: UINavigationBar {
     @IBInspectable
     public var endColor: UIColor = UIColor.clear{
         didSet{
-            setGradientBackground()
+            setGradientBackground(force: true)
         }
     }
     
-    func initialize(){
-        
-    }
     
     public override func layoutSubviews() {
         super.layoutSubviews()
@@ -37,7 +35,22 @@ public class SKGradientNavigationBar: UINavigationBar {
         setGradientBackground()
     }
     
-    private func setGradientBackground(){
+    //    private func cgRectEqual (lhs: CGRect, rhs: CGRect){
+    //        let widthEqual = lhs.size.width == rhs.size.width
+    //        let heightEqual = lhs.size.height == rhs.size.height
+    //        let xEqual = lhs.origin.x == rhs.origin.x
+    //        let yEqual = lhs.origin.y == rhs.origin.y
+    //
+    //        return widthEqual && heightEqual && xEqual && yEqual
+    //    }
+    
+    
+    private func setGradientBackground(force: Bool = false){
+    
+        if lastRect != nil && lastRect!.equalTo(self.frame) && !force {
+            return //this is to prevent unwanted gradient setting
+        }
+        
         let gradientLayer = CAGradientLayer()
         var updatedFrame = self.frame
         updatedFrame.size.height += 20
@@ -47,7 +60,12 @@ public class SKGradientNavigationBar: UINavigationBar {
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         
         UIGraphicsBeginImageContext(gradientLayer.bounds.size)
-        gradientLayer.render(in: UIGraphicsGetCurrentContext()!)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            UIGraphicsEndImageContext()
+            return
+        }
+        lastRect = self.frame
+        gradientLayer.render(in: context)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
@@ -55,3 +73,6 @@ public class SKGradientNavigationBar: UINavigationBar {
     }
     
 }
+
+
+

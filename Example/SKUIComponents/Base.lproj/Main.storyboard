@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NTh-Fo-OGx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NTh-Fo-OGx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
         <scene sceneID="5u4-b3-jbr">
             <objects>
                 <navigationController autoresizesArchivedViewToFullSize="NO" id="NTh-Fo-OGx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="g4P-f5-JR8" customClass="GradientNavigationBar" customModule="SKUIComponents">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="g4P-f5-JR8" customClass="SKGradientNavigationBar" customModule="SKUIComponents">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <userDefinedRuntimeAttributes>
@@ -49,11 +49,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-m6-1NN" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
-                                <rect key="frame" x="53" y="553" width="267" height="30"/>
+                                <rect key="frame" x="54.5" y="553" width="266" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NlB-Jy-ZhO"/>
                                 </constraints>
@@ -153,7 +153,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-mo-YmJ" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
-                                <rect key="frame" x="245" y="194" width="75" height="30"/>
+                                <rect key="frame" x="244.5" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Rb1-J4-2wD"/>
                                 </constraints>
@@ -181,8 +181,12 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-4d-xVo" customClass="SKGradientProgressButton" customModule="SKUIComponents">
-                                <rect key="frame" x="157" y="405" width="60" height="60"/>
+                                <rect key="frame" x="172" y="449" width="30" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HnV-4d-xVo" secondAttribute="height" multiplier="15:17" id="2d1-AO-Xzo"/>
+                                    <constraint firstAttribute="width" constant="30" id="BUg-tj-Qy2"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
                                         <color key="value" red="0.24313725489999999" green="0.54117647059999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,15 +202,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zlK-m6-1NN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4tB-Hq-dyT"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="baseline" secondItem="Mk3-mo-YmJ" secondAttribute="firstBaseline" id="8B9-JV-XRR"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="A2b-vB-2kq"/>
                             <constraint firstAttribute="bottom" secondItem="zlK-m6-1NN" secondAttribute="bottom" constant="20" symbolic="YES" id="BEl-8u-WQJ"/>
                             <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="v56-Dg-qw7" secondAttribute="bottom" constant="35" id="ET7-Ke-nwv"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="F1R-Te-hFX"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="94" id="KLH-wQ-N5f"/>
-                            <constraint firstItem="HnV-4d-xVo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="157" id="LLQ-mh-int"/>
-                            <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="n9J-f3-0Zs" secondAttribute="centerX" id="OUT-ul-eZJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mk3-mo-YmJ" secondAttribute="trailing" constant="39.5" id="NMh-Cz-aq0"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="5Za-xm-ZJM" secondAttribute="centerX" id="S3s-47-xsz"/>
+                            <constraint firstItem="zlK-m6-1NN" firstAttribute="top" secondItem="HnV-4d-xVo" secondAttribute="bottom" constant="70" id="STR-qL-W9u"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="U3Q-4a-sgO"/>
                             <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="xa4-HX-cxS" secondAttribute="bottom" constant="88" id="YSe-GQ-nd8"/>
                             <constraint firstItem="Mk3-mo-YmJ" firstAttribute="baseline" secondItem="v56-Dg-qw7" secondAttribute="firstBaseline" id="YSt-QF-YM8"/>
@@ -214,12 +219,9 @@
                             <constraint firstItem="xa4-HX-cxS" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="25" id="epo-Wc-Vji"/>
                             <constraint firstItem="xa4-HX-cxS" firstAttribute="centerX" secondItem="n9J-f3-0Zs" secondAttribute="centerX" id="fSR-P7-xHK"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hZN-6e-Lfg"/>
-                            <constraint firstItem="Mk3-mo-YmJ" firstAttribute="trailing" secondItem="zlK-m6-1NN" secondAttribute="trailing" id="kR1-ic-vW3"/>
-                            <constraint firstItem="HnV-4d-xVo" firstAttribute="top" secondItem="n9J-f3-0Zs" secondAttribute="bottom" constant="20" id="n29-FE-FFG"/>
-                            <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="zlK-m6-1NN" secondAttribute="centerX" id="tL9-2H-ypK"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qvm-Et-JR5"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="Mk3-mo-YmJ" secondAttribute="top" id="tTR-tl-0hH"/>
                             <constraint firstItem="5Za-xm-ZJM" firstAttribute="top" secondItem="Cqp-to-Iig" secondAttribute="bottom" constant="24" id="u7u-Ou-sBA"/>
-                            <constraint firstItem="zlK-m6-1NN" firstAttribute="top" secondItem="HnV-4d-xVo" secondAttribute="bottom" constant="88" id="x8t-td-667"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gnj-4i-OWL"/>
@@ -236,7 +238,7 @@
             <objects>
                 <tableViewController autoresizesArchivedViewToFullSize="NO" id="gca-pn-wu8" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4hR-1r-GDy">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
