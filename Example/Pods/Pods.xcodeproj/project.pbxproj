@@ -335,10 +335,10 @@
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					20343F47945A1025B9127B486DD9AFEB = {
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = "";
 					};
 					B0A6E43B492166E6FA5D8A9DB2F4F94D = {
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = "";
 					};
 					F176C126E30266F32602C8187F05763B = {
 						LastSwiftMigration = 0900;
@@ -439,7 +439,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -475,7 +476,8 @@
 				PRODUCT_NAME = Pods_SKUIComponents_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -595,7 +597,8 @@
 				PRODUCT_NAME = Pods_SKUIComponents_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -698,7 +701,8 @@
 				PRODUCT_NAME = Pods_SKUIComponents_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
