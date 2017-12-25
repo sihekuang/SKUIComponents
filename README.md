@@ -23,7 +23,7 @@ Simply inherit the UI classes, no coding necessary!
 
 ## Requirements
 
-Swift 3 ONLY. iOS 10.0+
+Built for Swift 3+. iOS 10.0+
 
 ## Example
 
