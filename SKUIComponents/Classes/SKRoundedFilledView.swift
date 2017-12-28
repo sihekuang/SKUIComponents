@@ -7,6 +7,7 @@
 
 import UIKit
 
+@IBDesignable
 public class SKRoundedFilledView: UIView{
     @IBInspectable
     public var cornerRadius: CGFloat = 0

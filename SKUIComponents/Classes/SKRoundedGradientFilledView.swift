@@ -7,6 +7,7 @@
 
 import UIKit
 
+@IBDesignable
 public class SKRoundedGradientFilledView: SKRoundedFilledView{
     @IBInspectable
     public var endColor: UIColor?
