@@ -9,24 +9,24 @@
 import UIKit
 
 @IBDesignable
-public class SKGradientProgressButton: UIButton {
+open class SKGradientProgressButton: UIButton {
     
     @IBInspectable
-    public var startColor: UIColor = UIColor.blue
+    open var startColor: UIColor = UIColor.blue
     
     @IBInspectable
-    public var endColor: UIColor = UIColor.red
+    open var endColor: UIColor = UIColor.red
     
     @IBInspectable
-    public var archWidth: CGFloat = 5
+    open var archWidth: CGFloat = 5
     
     @IBInspectable
-    public var startColorRatio: CGFloat = 0.5
+    open var startColorRatio: CGFloat = 0.5
     
     @IBInspectable
-    public var percent: CGFloat = 1
+    open var percent: CGFloat = 1
     
-    public var isAnimating: Bool{
+    open var isAnimating: Bool{
         get{
             if let _ = self.layer.animation(forKey: rotationAnimationKey){
                 return true
@@ -39,7 +39,7 @@ public class SKGradientProgressButton: UIButton {
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    public override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         // Drawing code
         
         let gradientArchLayer = SKUIHelper.getArchLayerWithGradient(bounds: rect,
@@ -52,7 +52,7 @@ public class SKGradientProgressButton: UIButton {
         
     }
     
-    public func beginRotaionAnimation(isClockwise: Bool, periodInSec: Float){
+    open func beginRotaionAnimation(isClockwise: Bool, periodInSec: Float){
         var rotationAnimation = CABasicAnimation()
         rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
         rotationAnimation.toValue = NSNumber(value: (Double.pi * 2.0))
@@ -62,7 +62,7 @@ public class SKGradientProgressButton: UIButton {
         self.layer.add(rotationAnimation, forKey: rotationAnimationKey)
     }
     
-    public func stopRotationAnimation(){
+    open func stopRotationAnimation(){
         self.layer.removeAnimation(forKey: rotationAnimationKey)
     }
 }

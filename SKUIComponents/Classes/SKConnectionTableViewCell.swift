@@ -8,48 +8,48 @@
 
 import UIKit
 @IBDesignable
-public class SKConnectionTableViewCell: UITableViewCell {
+open class SKConnectionTableViewCell: UITableViewCell {
 
     @IBInspectable
-    public var circleArchWidth: CGFloat = 3
+    open var circleArchWidth: CGFloat = 3
     
     @IBInspectable
-    public var circleRadius: CGFloat = 10
+    open var circleRadius: CGFloat = 10
     
     @IBInspectable
-    public var circleColor: UIColor = UIColor.darkGray
+    open var circleColor: UIColor = UIColor.darkGray
     
     @IBInspectable
-    public var circlePositionYRatio: CGFloat = 0.5
+    open var circlePositionYRatio: CGFloat = 0.5
     
     @IBInspectable
-    public var circlePositionXPixel: CGFloat = 5
+    open var circlePositionXPixel: CGFloat = 5
     
     @IBInspectable
-    public var isDrawingTopLine: Bool = true
+    open var isDrawingTopLine: Bool = true
     
     @IBInspectable
-    public var isDrawingBottomLine: Bool = true
+    open var isDrawingBottomLine: Bool = true
     
     @IBInspectable
-    public var lineWidth: CGFloat = 2
+    open var lineWidth: CGFloat = 2
     
     @IBInspectable
-    public var lineColor: UIColor = UIColor.lightGray
+    open var lineColor: UIColor = UIColor.lightGray
     
     
-    public override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    public override func setSelected(_ selected: Bool, animated: Bool) {
+    open override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
-    public override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         
         let archWidth: CGFloat = circleArchWidth
         

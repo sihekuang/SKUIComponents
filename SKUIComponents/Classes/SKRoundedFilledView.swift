@@ -8,16 +8,16 @@
 import UIKit
 
 @IBDesignable
-public class SKRoundedFilledView: UIView{
+open class SKRoundedFilledView: UIView{
     @IBInspectable
-    public var cornerRadius: CGFloat = 0
+    open var cornerRadius: CGFloat = 0
     
     @IBInspectable
-    public var fillColor: UIColor?
+    open var fillColor: UIColor?
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         // Drawing code
         
         let bgColor = self.fillColor

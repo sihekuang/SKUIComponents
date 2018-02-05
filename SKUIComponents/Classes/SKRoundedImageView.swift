@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-public class SKRoundedImageView: UIImageView{
+open class SKRoundedImageView: UIImageView{
 
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         
         
         let bounds = self.bounds

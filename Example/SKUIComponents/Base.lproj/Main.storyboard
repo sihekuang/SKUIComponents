@@ -237,13 +237,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-l5-o0p" customClass="SKVerticalImageButton" customModule="SKUIComponents">
-                                <rect key="frame" x="285" y="35.5" width="90" height="48"/>
+                                <rect key="frame" x="285" y="36" width="90" height="48"/>
                                 <state key="normal" title="Hello" image="smileyface">
                                     <color key="titleColor" red="0.16219937800000001" green="0.19603428240000001" blue="0.23331063990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageTextPadding">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isImageOnTop" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -255,7 +255,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageTextPadding">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="-9"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isImageOnTop" value="NO"/>
                                 </userDefinedRuntimeAttributes>

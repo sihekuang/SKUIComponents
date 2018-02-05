@@ -9,12 +9,12 @@
 import UIKit
 
 @IBDesignable
-public class SKGradientNavigationBar: UINavigationBar {
+open class SKGradientNavigationBar: UINavigationBar {
     
     private var lastRect: CGRect?
     
     @IBInspectable
-    public var startColor: UIColor = UIColor.clear {
+    open var startColor: UIColor = UIColor.clear {
         didSet{
             setGradientBackground(force: true)
             
@@ -22,14 +22,14 @@ public class SKGradientNavigationBar: UINavigationBar {
     }
     
     @IBInspectable
-    public var endColor: UIColor = UIColor.clear{
+    open var endColor: UIColor = UIColor.clear{
         didSet{
             setGradientBackground(force: true)
         }
     }
     
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         setGradientBackground()

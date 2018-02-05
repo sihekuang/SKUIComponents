@@ -9,12 +9,12 @@
 import Foundation
 
 @IBDesignable
-public class SKRoundedGradientFilledButton: SKRoundedFilledButton{
+open class SKRoundedGradientFilledButton: SKRoundedFilledButton{
     
     @IBInspectable
-    public var endColor: UIColor?
+    open var endColor: UIColor?
     
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         
         let startColor = self.fillColor ?? UIColor.white
         let endColor = self.endColor ?? startColor

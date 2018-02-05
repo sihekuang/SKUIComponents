@@ -8,11 +8,11 @@
 import UIKit
 
 @IBDesignable
-public class SKRoundedGradientFilledView: SKRoundedFilledView{
+open class SKRoundedGradientFilledView: SKRoundedFilledView{
     @IBInspectable
-    public var endColor: UIColor?
+    open var endColor: UIColor?
     
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         
         let startColor = self.fillColor ?? UIColor.white
         let endColor = self.endColor ?? startColor

@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SKProgressRingButton: UIButton {
+open class SKProgressRingButton: UIButton {
 
     
     private var _progress: CGFloat = 0.5
@@ -18,12 +18,12 @@ public class SKProgressRingButton: UIButton {
     private let quarterPi = Float.pi / 4
     private let halfPi = Float.pi / 2
     
-    @IBInspectable var fillColor: UIColor?
-    @IBInspectable var maxValue: CGFloat = 100
+    @IBInspectable open var fillColor: UIColor?
+    @IBInspectable open var maxValue: CGFloat = 100
     
     
     //MARK: - poublic variable
-    @IBInspectable var progress: CGFloat {
+    @IBInspectable open var progress: CGFloat {
         get{
             return _progress
         }
@@ -37,7 +37,7 @@ public class SKProgressRingButton: UIButton {
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         // Drawing code
         self.drawBackgroundRing()
 

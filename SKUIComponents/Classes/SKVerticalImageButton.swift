@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class SKVerticalImageButton: UIButton {
+open class SKVerticalImageButton: UIButton {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -19,12 +19,12 @@ class SKVerticalImageButton: UIButton {
     */
 
     @IBInspectable
-    var imageTextPadding: CGFloat = 6.0
+    open var imageTextPadding: CGFloat = 2.0
     
     @IBInspectable
-    var isImageOnTop: Bool = true
+    open var isImageOnTop: Bool = true
     
-    override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         alignImageAndTitleVertically(padding: imageTextPadding)
     }
     
@@ -34,7 +34,7 @@ class SKVerticalImageButton: UIButton {
        
         if isImageOnTop {
             self.imageEdgeInsets = UIEdgeInsets(
-                top: -titleSize.height,
+                top: -titleSize.height - (imageTextPadding / 2),
                 left: 0,
                 bottom: 0,
                 right: -titleSize.width
@@ -43,21 +43,21 @@ class SKVerticalImageButton: UIButton {
             self.titleEdgeInsets = UIEdgeInsets(
                 top: 0,
                 left: -imageSize.width,
-                bottom: -imageSize.height,
+                bottom: -imageSize.height - (imageTextPadding / 2),
                 right: 0
             )
         }else{
             self.imageEdgeInsets = UIEdgeInsets(
                 top: 0,
                 left: 0,
-                bottom: -titleSize.height,
+                bottom: -titleSize.height - (imageTextPadding / 2),
                 right: -titleSize.width
             )
             
             self.titleEdgeInsets = UIEdgeInsets(
                 top: 0,
                 left: -imageSize.width,
-                bottom: imageSize.height,
+                bottom: imageSize.height + (imageTextPadding / 2),
                 right: 0
             )
         }
