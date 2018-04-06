@@ -17,6 +17,19 @@ open class SKRoundedFilledButton: UIButton {
     @IBInspectable
     open var fillColor: UIColor?
     
+    // Shadow
+    @IBInspectable
+    open var showShadow: Bool = false
+    
+    @IBInspectable
+    open var shadowOffsetX: CGFloat = 0
+    
+    @IBInspectable
+    open var shadowOffsetY: CGFloat = 0
+    
+    @IBInspectable
+    open var shadowRadius: CGFloat = 3
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override open func draw(_ rect: CGRect) {
@@ -26,6 +39,10 @@ open class SKRoundedFilledButton: UIButton {
         let radius = self.cornerRadius
         
         let bezierPath = UIBezierPath(roundedRect: rect, cornerRadius: radius)
+        
+        if showShadow{
+            SKUIHelper.drawShadow(view: self, bezierPath: bezierPath, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius)
+        }
         
         bgColor?.setFill()
         bezierPath.fill()

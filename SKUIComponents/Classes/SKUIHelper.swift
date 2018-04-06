@@ -143,7 +143,7 @@ public class SKUIHelper{
     /*!
      * This method draws gradient from left to right in square
      */
-    public static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat){
+    public static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat)->UIBezierPath?{
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
         let gradientColors: CFArray = [startColor.cgColor, endColor.cgColor] as CFArray
@@ -163,6 +163,18 @@ public class SKUIHelper{
             let endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)
             
             context.drawLinearGradient(lineGradient!, start: startPoint, end: endPoint, options: CGGradientDrawingOptions(rawValue: 0))
+            return bezierPath
         }
+        return nil
+    }
+    
+    public static func drawShadow(view: UIView, bezierPath: UIBezierPath, cornerRadius: CGFloat, shadowOffsetX: CGFloat, shadowOffsetY: CGFloat, shadowRadius: CGFloat){
+        view.layer.cornerRadius = cornerRadius
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: shadowOffsetX, height: shadowOffsetY)  //Here you control x and y
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowRadius = shadowRadius //Here your control your blur
+        view.layer.masksToBounds =  false
+        view.layer.shadowPath = bezierPath.cgPath
     }
 }
