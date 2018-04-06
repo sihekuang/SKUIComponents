@@ -21,6 +21,8 @@ open class SKRoundedGradientFilledView: SKRoundedFilledView{
         let bezierPath = SKUIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
         
         guard let path = bezierPath else {return}
-        SKUIHelper.drawShadow(view: self, bezierPath: path, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius)
+        if showShadow{
+            SKUIHelper.drawShadow(view: self, bezierPath: path, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius)
+        }
     }
 }
