@@ -44,4 +44,9 @@ open class SKRoundedFilledView: UIView{
         bgColor?.setFill()
         bezierPath.fill()
     }
+    
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        setNeedsDisplay()
+    }
 }

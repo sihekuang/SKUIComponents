@@ -63,4 +63,9 @@ open class SKProgressRingButton: UIButton {
         let valueInt = Int(value)
         self.setTitle("\(valueInt)", for: UIControlState.normal)
     }
+    
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        setNeedsDisplay()
+    }
 }
