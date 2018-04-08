@@ -111,15 +111,18 @@
                                         <color key="value" red="0.9868574739" green="0.43419814109999999" blue="0.41245949269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetX">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineShadowColor">
+                                        <color key="value" red="0.9868574739" green="0.43419814109999999" blue="0.41245949269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-to-Iig" customClass="SKRoundedFilledButton" customModule="SKUIComponents">
@@ -137,6 +140,19 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                         <color key="value" red="0.58645433189999996" green="0.80936342480000001" blue="0.70476001499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetX">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineShadowColor">
+                                        <color key="value" red="0.18997538089999999" green="0.6116954684" blue="0.91163605449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -204,6 +220,19 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                         <color key="value" red="0.99741810559999999" green="0.93277567630000002" blue="0.67650157209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetX">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineShadowColor">
+                                        <color key="value" red="0.18997538089999999" green="0.6116954684" blue="0.91163605449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnV-4d-xVo" customClass="SKGradientProgressButton" customModule="SKUIComponents">
@@ -224,37 +253,6 @@
                                 <connections>
                                     <action selector="gradientButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NN7-Az-EoH"/>
                                 </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4q-4W-NCF" customClass="SKRoundedGradientFilledButton" customModule="SKUIComponents">
-                                <rect key="frame" x="152" y="443" width="71" height="36"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Fk3-K3-D9Z"/>
-                                    <constraint firstAttribute="width" constant="71" id="Gkx-vx-CJr"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="VGy-xc-b13"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="isD-lk-HDp"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.9868574739" green="0.43419814109999999" blue="0.41245949269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.99741810559999999" green="0.93277567630000002" blue="0.67650157209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetX">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-l5-o0p" customClass="SKVerticalImageButton" customModule="SKUIComponents">
                                 <rect key="frame" x="285" y="36" width="90" height="48"/>
@@ -280,6 +278,38 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isImageOnTop" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-w2-X1n" customClass="SKRoundedGradientFilledView" customModule="SKUIComponents">
+                                <rect key="frame" x="152" y="449" width="71" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="7DM-zd-Y6o"/>
+                                    <constraint firstAttribute="height" constant="36" id="R7h-yW-xkv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.99741810559999999" green="0.93277567630000002" blue="0.67650157209999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.9868574739" green="0.43419814109999999" blue="0.41245949269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetX">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineShadowColor">
+                                        <color key="value" red="0.1912591159" green="0.6000829339" blue="0.90792340039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -289,6 +319,7 @@
                             <constraint firstItem="psI-Ws-aiw" firstAttribute="centerX" secondItem="HnV-4d-xVo" secondAttribute="centerX" id="9H1-1r-Zxt"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="A2b-vB-2kq"/>
                             <constraint firstAttribute="bottom" secondItem="zlK-m6-1NN" secondAttribute="bottom" constant="20" symbolic="YES" id="BEl-8u-WQJ"/>
+                            <constraint firstItem="y1w-w2-X1n" firstAttribute="leading" secondItem="psI-Ws-aiw" secondAttribute="leading" id="Ce7-Fa-WDw"/>
                             <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="v56-Dg-qw7" secondAttribute="bottom" constant="35" id="ET7-Ke-nwv"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="F1R-Te-hFX"/>
                             <constraint firstItem="4nH-sJ-ZwS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="JBj-6F-v2q"/>
@@ -301,12 +332,11 @@
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="U3Q-4a-sgO"/>
                             <constraint firstItem="n9J-f3-0Zs" firstAttribute="top" secondItem="xa4-HX-cxS" secondAttribute="bottom" constant="88" id="YSe-GQ-nd8"/>
                             <constraint firstItem="Mk3-mo-YmJ" firstAttribute="baseline" secondItem="v56-Dg-qw7" secondAttribute="firstBaseline" id="YSt-QF-YM8"/>
+                            <constraint firstItem="HnV-4d-xVo" firstAttribute="top" secondItem="y1w-w2-X1n" secondAttribute="bottom" constant="2" id="ZGD-np-VOL"/>
                             <constraint firstItem="5Za-xm-ZJM" firstAttribute="centerX" secondItem="xa4-HX-cxS" secondAttribute="centerX" id="af8-dt-bhL"/>
-                            <constraint firstItem="HnV-4d-xVo" firstAttribute="top" secondItem="J4q-4W-NCF" secondAttribute="bottom" constant="8" symbolic="YES" id="bwY-rr-Frg"/>
                             <constraint firstItem="xa4-HX-cxS" firstAttribute="top" secondItem="5Za-xm-ZJM" secondAttribute="bottom" constant="25" id="epo-Wc-Vji"/>
                             <constraint firstItem="xa4-HX-cxS" firstAttribute="centerX" secondItem="n9J-f3-0Zs" secondAttribute="centerX" id="fSR-P7-xHK"/>
                             <constraint firstItem="Cqp-to-Iig" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hZN-6e-Lfg"/>
-                            <constraint firstItem="J4q-4W-NCF" firstAttribute="leading" secondItem="psI-Ws-aiw" secondAttribute="leading" id="oyv-aw-F2m"/>
                             <constraint firstItem="4nH-sJ-ZwS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pLT-v2-3xd"/>
                             <constraint firstItem="HnV-4d-xVo" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qvm-Et-JR5"/>
                             <constraint firstItem="v56-Dg-qw7" firstAttribute="top" secondItem="Mk3-mo-YmJ" secondAttribute="top" id="tTR-tl-0hH"/>

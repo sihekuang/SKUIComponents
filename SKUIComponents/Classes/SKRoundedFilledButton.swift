@@ -30,7 +30,8 @@ open class SKRoundedFilledButton: UIButton {
     @IBInspectable
     open var shadowRadius: CGFloat = 3
     
-    private var bezierPath: UIBezierPath?
+    @IBInspectable
+    open var outlineShadowColor: UIColor = UIColor.black
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -45,7 +46,9 @@ open class SKRoundedFilledButton: UIButton {
         bgColor?.setFill()
         bezierPath.fill()
         
-        self.bezierPath = bezierPath
+        if showShadow{
+            SKUIHelper.drawShadow(view: self, bezierPath: bezierPath, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius, color: outlineShadowColor)
+        }
     }
     
     open override var isHighlighted: Bool{

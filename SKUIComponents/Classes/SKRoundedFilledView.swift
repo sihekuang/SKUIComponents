@@ -28,6 +28,9 @@ open class SKRoundedFilledView: UIView{
     @IBInspectable
     open var shadowRadius: CGFloat = 3
     
+    @IBInspectable
+    open var outlineShadowColor: UIColor = UIColor.black
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override open func draw(_ rect: CGRect) {
@@ -38,7 +41,7 @@ open class SKRoundedFilledView: UIView{
         
         let bezierPath = UIBezierPath(roundedRect: rect, cornerRadius: radius)
         if showShadow{
-            SKUIHelper.drawShadow(view: self, bezierPath: bezierPath, cornerRadius: radius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius)
+            SKUIHelper.drawShadow(view: self, bezierPath: bezierPath, cornerRadius: radius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius, color: outlineShadowColor)
         }
         
         bgColor?.setFill()

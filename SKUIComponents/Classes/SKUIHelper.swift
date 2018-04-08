@@ -168,9 +168,9 @@ public class SKUIHelper{
         return nil
     }
     
-    public static func drawShadow(view: UIView, bezierPath: UIBezierPath, cornerRadius: CGFloat, shadowOffsetX: CGFloat, shadowOffsetY: CGFloat, shadowRadius: CGFloat){
+    public static func drawShadow(view: UIView, bezierPath: UIBezierPath, cornerRadius: CGFloat, shadowOffsetX: CGFloat, shadowOffsetY: CGFloat, shadowRadius: CGFloat, color: UIColor = UIColor.black){
         view.layer.cornerRadius = cornerRadius
-        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowColor = color.cgColor
         view.layer.shadowOffset = CGSize(width: shadowOffsetX, height: shadowOffsetY)  //Here you control x and y
         view.layer.shadowOpacity = 0.5
         view.layer.shadowRadius = shadowRadius //Here your control your blur

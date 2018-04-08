@@ -24,7 +24,7 @@ open class SKRoundedGradientFilledButton: SKRoundedFilledButton{
             return
         }
         if showShadow{
-            SKUIHelper.drawShadow(view: self, bezierPath: path, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius)
+            SKUIHelper.drawShadow(view: self, bezierPath: path, cornerRadius: cornerRadius, shadowOffsetX: shadowOffsetX, shadowOffsetY: shadowOffsetY, shadowRadius: shadowRadius, color: outlineShadowColor)
         }
         
     }
