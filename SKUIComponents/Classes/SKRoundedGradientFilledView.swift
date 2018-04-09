@@ -12,13 +12,16 @@ open class SKRoundedGradientFilledView: SKRoundedFilledView{
     @IBInspectable
     open var endColor: UIColor?
     
+    @IBInspectable
+    open var isGradientHorizontal: Bool = true
+    
     override open func draw(_ rect: CGRect) {
         
         let startColor = self.fillColor ?? UIColor.white
         let endColor = self.endColor ?? startColor
         let radius = self.cornerRadius
         
-        let bezierPath = SKUIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius)
+        let bezierPath = SKUIHelper.drawRectGradient(rect: rect, startColor: startColor, endColor: endColor, cornerRadius: radius, isHorizontal: isGradientHorizontal)
         
         guard let path = bezierPath else {return}
         if showShadow{

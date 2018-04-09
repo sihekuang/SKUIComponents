@@ -143,7 +143,7 @@ public class SKUIHelper{
     /*!
      * This method draws gradient from left to right in square
      */
-    public static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat)->UIBezierPath?{
+    public static func drawRectGradient(rect: CGRect, startColor: UIColor, endColor: UIColor, cornerRadius: CGFloat, isHorizontal: Bool = true)->UIBezierPath?{
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
         let gradientColors: CFArray = [startColor.cgColor, endColor.cgColor] as CFArray
@@ -159,8 +159,15 @@ public class SKUIHelper{
             context.saveGState()
             
             
-            let startPoint = CGPoint(x: rect.origin.x, y: rect.origin.y)
-            let endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)
+            var startPoint: CGPoint
+            var endPoint: CGPoint
+            if isHorizontal{
+                startPoint = CGPoint(x: rect.origin.x, y: rect.origin.y)
+                endPoint = CGPoint(x: rect.size.width, y: rect.origin.y)
+            }else{
+                startPoint = CGPoint(x: rect.origin.x, y: rect.origin.y)
+                endPoint = CGPoint(x: rect.origin.x, y: rect.height)
+            }
             
             context.drawLinearGradient(lineGradient!, start: startPoint, end: endPoint, options: CGGradientDrawingOptions(rawValue: 0))
             return bezierPath
