@@ -61,7 +61,7 @@ open class SKProgressRingButton: UIButton {
     private func updateLabel(progress: CGFloat){
         let value = progress * maxValue
         let valueInt = Int(value)
-        self.setTitle("\(valueInt)", for: UIControlState.normal)
+        self.setTitle("\(valueInt)", for: UIControl.State.normal)
     }
     
     override open func layoutSubviews() {
