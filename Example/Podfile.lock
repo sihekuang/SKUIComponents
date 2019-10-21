@@ -1,16 +1,16 @@
 PODS:
-  - SKUIComponents (0.1.0)
+  - SKUIComponents (0.10.1)
 
 DEPENDENCIES:
   - SKUIComponents (from `../`)
 
 EXTERNAL SOURCES:
   SKUIComponents:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  SKUIComponents: 8b8304cdd09a63a69127869bdbfbfc7e54861da7
+  SKUIComponents: fdaeefdb2f3375bb89b3f417604190955bffb03c
 
-PODFILE CHECKSUM: 90131b706bd0a3bb8cc4d5154e26dec0a1c7693c
+PODFILE CHECKSUM: aff14f1d9302ff63fc6fa567ba10fcee979c68f4
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.8.4
